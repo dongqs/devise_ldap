@@ -68,3 +68,5 @@ config/initializers/devise.rb
 
       config.authentication_keys = [ :username ]
 
+config/ldap.yml
+---------------
