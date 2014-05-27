@@ -61,7 +61,7 @@ app/models/user.rb
 app/views/devise/sessions/new.html.slim
 ---------------------------------------
 
-    chagne email to username
+    change email to username
 
 config/initializers/devise.rb
 -----------------------------
