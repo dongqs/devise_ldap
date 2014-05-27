@@ -46,7 +46,7 @@ app/models/user.rb
       end
 
       # hack for remember_token
-      def remember_token
+      def authenticatable_token
         Digest::SHA1.hexdigest(email)[0,29]
       end
     end
@@ -67,6 +67,7 @@ config/initializers/devise.rb
       config.ldap_use_admin_to_bind = true
 
       config.authentication_keys = [ :username ]
+      config.password_length = 0..128 # if your ldap has a weak password police
 
 config/ldap.yml
 ---------------
